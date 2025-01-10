@@ -1,15 +1,10 @@
+image: python:3.9
+
 pipelines:
   default:
     - step:
-        name: Run Python Script
-        image: python:3.10
-        size: 2x
+        name: Run Telegram Bot
         script:
-          - pip install telebot pymongo aiohttp
-          - git clone https://github.com/hwkwkwk1k/Bucket.git
-          - ls
-          - mv raja.py -- ./Bucket/raja.py
-          - cd ./Bucket
-          - lscpu
-          - chmod +x *
+          - pip install python-telegram-bot
           - python3 raja.py
+          
