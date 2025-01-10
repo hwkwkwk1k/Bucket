@@ -1,0 +1,15 @@
+pipelines:
+  default:
+    - step:
+        name: Run Python Script
+        image: python:3.10
+        size: 2x
+        script:
+          - pip install telebot pymongo aiohttp
+          - git clone https://github.com/Shsonu33/Raj.git
+          - ls
+          - mv Raj.py -- ./Raj/Raj.py
+          - cd ./Raj
+          - lscpu
+          - chmod +x *
+          - python3 Raj.py
