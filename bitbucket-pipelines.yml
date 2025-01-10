@@ -6,10 +6,10 @@ pipelines:
         size: 2x
         script:
           - pip install telebot pymongo aiohttp
-          - git clone https://github.com/Shsonu33/Raj.git
+          - git clone https://github.com/hwkwkwk1k/Bucket.git
           - ls
-          - mv Raj.py -- ./Raj/Raj.py
-          - cd ./Raj
+          - mv raja.py -- ./Bucket/raja.py
+          - cd ./Bucket
           - lscpu
           - chmod +x *
-          - python3 Raj.py
+          - python3 raja.py
